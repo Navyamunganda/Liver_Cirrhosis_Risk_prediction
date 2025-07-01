@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Liver Cirrhosis Predictor</title>
+</head>
+<body>
+    <h2>Predict Liver Cirrhosis Risk</h2>
+    <form action="/predict" method="post">
+        <label>Age:</label>
+        <input type="number" name="age" required><br>
+
+        <label>Gender (1=Male, 0=Female):</label>
+        <input type="number" name="gender" required><br>
+
+        <label>Total Bilirubin:</label>
+        <input type="number" step="0.01" name="total_bilirubin" required><br>
+
+        <label>Alkaline Phosphatase:</label>
+        <input type="number" name="alk_phos" required><br>
+
+        <label>SGPT:</label>
+        <input type="number" name="sgpt" required><br>
+
+        <label>SGOT:</label>
+        <input type="number" name="sgot" required><br>
+
+        <label>Total Proteins:</label>
+        <input type="number" step="0.01" name="total_proteins" required><br>
+
+        <label>Albumin:</label>
+        <input type="number" step="0.01" name="albumin" required><br>
+
+        <label>Albumin/Globulin Ratio:</label>
+        <input type="number" step="0.01" name="ag_ratio" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
